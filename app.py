@@ -52,7 +52,7 @@ def predict_heart_disease():
     cp = st.number_input("Chest Pain Type (0-3)", min_value=0, max_value=3)
     trestbps = st.number_input("Resting Blood Pressure", min_value=0)
     chol = st.number_input("Cholesterol Level", min_value=0)
-    fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl (1 = Yes, 0 = No)", [0, 1])
+    fbs = int(st.selectbox("Fasting Blood Sugar > 120 mg/dl (1 = Yes, 0 = No)", [0, 1]))
     restecg = st.number_input("Resting ECG (0-2)", min_value=0, max_value=2)
     thalach = st.number_input("Max Heart Rate Achieved", min_value=0)
     exang = st.selectbox("Exercise Induced Angina (1 = Yes, 0 = No)", [0, 1])
